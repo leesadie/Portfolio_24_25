@@ -1,6 +1,6 @@
 'use client';
 
-import { font_bold } from "../fonts";
+import { font_bold, font_med } from "../fonts";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -10,14 +10,14 @@ const ReachoutClient = () => {
     return (
         <div className="flex flex-col lg:mx-80 mx-5">
             <div className="flex flex-row justify-between">
-                <div className={`lg:text-xl text-sm text-neutral-900 ${font_bold.className}`}>
+                <div className={`lg:text-xl text-sm text-neutral-900 ${font_med.className}`}>
                     T1D REACHOUT Time in Range
                 </div>
-                <div className="lg:text-xl text-sm text-neutral-900 opacity-50">
+                <div className="lg:text-lg text-sm text-neutral-900 opacity-50">
                     May 2023 - April 2024
                 </div>
             </div>
-            <div className="pt-5">
+            <div className="pt-3">
                 <Image 
                     src='/images/tir_3.svg'
                     alt="dashboard"
@@ -32,8 +32,8 @@ const ReachoutClient = () => {
                 the 3.9-10.0 mmol/L range, which is indicative of good glycemic control.
             </div>
             <div className="lg:grid lg:grid-cols-5 flex flex-col pt-10 lg:gap-10 gap-5">
-                <div className="flex flex-col col-span-3 text-neutral-900 text-base">
-                    <div className={`${font_bold.className}`}>
+                <div className="flex flex-col col-span-3 text-neutral-900 lg:text-lg text-base">
+                    <div className={`${font_med.className}`}>
                         Key Points
                     </div>
                     <div className="pt-5">
@@ -46,8 +46,8 @@ const ReachoutClient = () => {
                         In addition to calculating time in range, we calculated time spent in the high range, very high range, low range, and very low range, as well as Glucose Management Indicator and coefficient of variation.
                     </div>
                 </div>
-                <div className="flex flex-col col-span-1 text-neutral-900 text-base">
-                    <div className={`${font_bold.className}`}>
+                <div className="flex flex-col col-span-1 text-neutral-900 lg:text-lg text-base">
+                    <div className={`${font_med.className}`}>
                         Skills
                     </div>
                     <div className="pt-5">
@@ -60,8 +60,8 @@ const ReachoutClient = () => {
                         Data visualization
                     </div>
                 </div>
-                <div className="flex flex-col col-span-1 text-neutral-900 text-base">
-                    <div className={`${font_bold.className}`}>
+                <div className="flex flex-col col-span-1 text-neutral-900 lg:text-lg text-base">
+                    <div className={`${font_med.className}`}>
                         Tools
                     </div>
                     <div className="pt-5">

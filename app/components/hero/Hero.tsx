@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import { font_bold } from "@/app/fonts";
+import { font_bold, font_med } from "@/app/fonts";
 import { useRouter } from "next/navigation";
 import { useCallback } from "react";
 
@@ -48,7 +48,7 @@ const Hero = () => {
         <div className="flex flex-col mx-80">
             <div
                 className="
-                    lg:text-2xl
+                    lg:text-3xl
                     lg:pt-5
                     text-xl
                     text-neutral-900
@@ -56,9 +56,9 @@ const Hero = () => {
                     items-center
                 "
             >
-                I’m Sadie Lee — currently studying cognitive science and data science at the University of British Columbia. My experience and interests are within applications of data and technology for human health.
+                I’m Sadie Lee — currently studying cognitive science and data science at UBC. My experience and interests are within applications of data and technology for human health.
             </div>
-            <div className={`flex flex-col pt-20 text-xl ${font_bold.className}`}>
+            <div className={`flex flex-col pt-20 text-2xl ${font_med.className}`}>
                 Recent Work
             </div>
             <div
@@ -77,9 +77,9 @@ const Hero = () => {
                         alt="dashboard"
                         width={100}
                         height={100}
-                        className="w-full object-contain justify-center items-center rounded-xl min-h-0 h-full transition"
+                        className="w-full object-contain justify-center items-center rounded-2xl min-h-0 h-full transition"
                     />
-                    <div className="flex flex-row justify-between text-lg pt-5">
+                    <div className="flex flex-row justify-between text-lg pt-3">
                         <div className="">
                             Mayo Clinic Platform Market Intelligence
                         </div>
@@ -105,9 +105,9 @@ const Hero = () => {
                         alt="dashboard"
                         width={100}
                         height={100}
-                        className="w-full object-contain justify-center items-center rounded-xl min-h-0 h-full transition"
+                        className="w-full object-contain justify-center items-center rounded-2xl min-h-0 h-full transition"
                     />
-                    <div className="flex flex-row justify-between text-lg pt-5">
+                    <div className="flex flex-row justify-between text-lg pt-3">
                         <div className="">
                             Mayo Clinic Platform Imaging Process
                         </div>
@@ -133,9 +133,9 @@ const Hero = () => {
                         alt="dashboard"
                         width={100}
                         height={100}
-                        className="w-full object-contain justify-center items-center rounded-xl min-h-0 h-full transition"
+                        className="w-full object-contain justify-center items-center rounded-2xl min-h-0 h-full transition"
                     />
-                    <div className="flex flex-row justify-between text-lg pt-5">
+                    <div className="flex flex-row justify-between text-lg pt-3">
                         <div className="">
                             T1D REACHOUT Time in Range
                         </div>
@@ -147,7 +147,7 @@ const Hero = () => {
             </div>
             <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-1 pb-20 items-center">
                 <div className="col-span-1 pt-24">
-                    <div className={`row-span-1 text-xl ${font_bold.className}`}>
+                    <div className={`row-span-1 text-2xl ${font_med.className}`}>
                         Previous Experience
                     </div>
                     <hr className="bg-neutral-300 mt-5 mr-5"/>
@@ -221,7 +221,7 @@ const Hero = () => {
                     <hr className="bg-neutral-300 mr-5"/>
                 </div>
                 <div className="col-span-1">
-                    <div className={`row-span-1 text-xl ${font_bold.className}`}>
+                    <div className={`row-span-1 text-2xl ${font_med.className}`}>
                         Research
                     </div>
                     <hr className="mt-5 bg-neutral-300"/>

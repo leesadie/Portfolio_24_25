@@ -46,9 +46,9 @@ const Hero_Sm = () => {
 
 
     return (
-        <div className="flex flex-col mx-5">
-            <div className="text-lg text-neutral-900 justify-center items-center">
-                I’m Sadie Lee — currently studying cognitive science and data science at the University of British Columbia. My experience and interests are within applications of data and technology for human health.
+        <div className="flex flex-col mx-5 mt-5">
+            <div className="text-base text-neutral-900 justify-center items-center">
+                I’m Sadie Lee — currently studying cognitive science and data science at UBC. My experience and interests are within applications of data and technology for human health.
             </div>
             <div className={`flex flex-col pt-10 text-base ${font_bold.className}`}>
                 Recent Work

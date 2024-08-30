@@ -23,7 +23,7 @@ const BCIModal = () => {
                     className="w-full object-contain justify-center items-center min-h-0 h-full transition"
                 />
             </div>
-            <div className="lg:mx-10 mx-5">
+            <div className="lg:mx-20 mx-5">
                 <div className="flex flex-row items-center gap-1">
                     <div className="opacity-50">
                         <IoIosInformationCircleOutline />
@@ -32,7 +32,7 @@ const BCIModal = () => {
                         Image from Hramov, Maksimenko, & Pisarchik, 2021 which was used in the literature review.
                     </div>
                 </div>
-                <div className="text-neutral-900 opacity-50 pt-10 lg:text-lg text-base">
+                <div className="text-neutral-900 opacity-50 pt-10 text-base">
                     HCI Research
                 </div>
                 <div className="text-netural-900 lg:text-lg text-base">
@@ -51,7 +51,7 @@ const BCIModal = () => {
                             Read the lit review
                         </div>
                     </a>
-                    <div className="mt-3 group-hover:opacity-50 group-hover:translate-x-1 transition">
+                    <div className="mt-3 text-indigo-700 group-hover:opacity-50 group-hover:translate-x-1 transition">
                         <IoIosArrowRoundForward size={24}/>
                     </div>
                 </div>

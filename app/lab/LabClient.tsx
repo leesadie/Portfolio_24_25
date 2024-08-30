@@ -1,14 +1,14 @@
 'use client';
 
-import { font_bold } from "../fonts";
+import { font_bold, font_med } from "../fonts";
 
 const LabClient = () => {
     return (
         <div className="flex flex-col lg:mx-80 mx-5">
-            <div className="lg:text-2xl text-neutral-900 text-base justify-center items-center">
+            <div className="lg:text-3xl text-neutral-900 text-base justify-center items-center">
                 In the lab — experimentation done for fun and for projects, things I've learned on my own, and other extras.
             </div>
-            <div className={`lg:mt-20 mt-10 lg:text-xl text-base text-neutral-900 ${font_bold.className}`}>
+            <div className={`lg:mt-20 mt-10 lg:text-2xl text-base text-neutral-900 ${font_med.className}`}>
                 Creative coding
             </div>
             <div className="grid grid-cols-2 gap-3 mt-10">
@@ -85,7 +85,7 @@ const LabClient = () => {
                     Generative - Processing
                 </div>
             </div>
-            <div className={`lg:mt-20 mt-10 lg:text-xl text-base text-neutral-900 ${font_bold.className}`}>
+            <div className={`lg:mt-20 mt-10 lg:text-2xl text-base text-neutral-900 ${font_med.className}`}>
                 Airbnb clone
             </div>
             <div className="flex flex-col gap-3 mt-10">

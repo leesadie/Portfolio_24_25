@@ -1,6 +1,6 @@
 'use client';
 
-import { font_bold } from "../fonts";
+import { font_bold, font_med } from "../fonts";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -10,10 +10,10 @@ const ForestarClient = () => {
     return (
         <div className="flex flex-col lg:mx-80 mx-5">
             <div className="flex flex-row justify-between">
-                <div className={`lg:text-xl text-base text-neutral-900 ${font_bold.className}`}>
+                <div className={`lg:text-xl text-base text-neutral-900 ${font_med.className}`}>
                     Forestar Web App
                 </div>
-                <div className="lg:text-xl text-base text-neutral-900 opacity-50">
+                <div className="lg:text-lg text-base text-neutral-900 opacity-50">
                     Summer 2023
                 </div>
             </div>
@@ -32,7 +32,7 @@ const ForestarClient = () => {
             illness, and/or guidance.
             </div>
             <div className="lg:grid lg:grid-cols-5 flex flex-col pt-10 lg:gap-10 gap-5">
-                <div className="flex flex-col col-span-3 text-neutral-900 text-base">
+                <div className="flex flex-col col-span-3 text-neutral-900 lg:text-lg text-base">
                     <div className={`${font_bold.className}`}>
                         Key Points
                     </div>
@@ -51,7 +51,7 @@ const ForestarClient = () => {
                         sense at a given location along the route.
                     </div>
                 </div>
-                <div className="flex flex-col col-span-1 text-neutral-900 text-base">
+                <div className="flex flex-col col-span-1 text-neutral-900 lg:text-lg text-base">
                     <div className={`${font_bold.className}`}>
                         Skills
                     </div>
@@ -65,7 +65,7 @@ const ForestarClient = () => {
                         Backend dev
                     </div>
                 </div>
-                <div className="flex flex-col col-span-1 text-neutral-900 text-base">
+                <div className="flex flex-col col-span-1 text-neutral-900 lg:text-lg text-base">
                     <div className={`${font_bold.className}`}>
                         Tools
                     </div>

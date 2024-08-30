@@ -67,7 +67,7 @@ const Modal: React.FC<ModalProps> = ({
                         md:w-4/6
                         my-6
                         mx-auto
-                        h-full
+                        h-auto
                     "
                 >
                     {/* CONTENT */}

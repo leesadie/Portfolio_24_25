@@ -23,8 +23,8 @@ const BalletModal = () => {
                     className="w-full h-1/2 object-contain justify-center items-center min-h-0 h-full transition"
                 />
             </div>
-            <div className="lg:mx-10 mx-5 lg:pt-10 pt-5">
-                <div className="text-neutral-900 opacity-50 pt-5 lg:text-lg text-base">
+            <div className="lg:mx-20 mx-5 lg:pt-10 pt-5">
+                <div className="text-neutral-900 opacity-50 pt-5 text-base">
                     Design & Development
                 </div>
                 <div className="text-netural-900 lg:text-lg text-base">
@@ -42,7 +42,7 @@ const BalletModal = () => {
                             Visit the website
                         </div>
                     </a>
-                    <div className="mt-3 group-hover:opacity-50 group-hover:translate-x-1 transition">
+                    <div className="mt-3 text-indigo-700 group-hover:opacity-50 group-hover:translate-x-1 transition">
                         <IoIosArrowRoundForward size={24}/>
                     </div>
                 </div>

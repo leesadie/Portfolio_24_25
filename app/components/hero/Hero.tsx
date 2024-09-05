@@ -48,7 +48,7 @@ const Hero = () => {
         <div className="flex flex-col mx-80">
             <div
                 className="
-                    lg:text-3xl
+                    lg:text-2xl
                     lg:pt-5
                     text-xl
                     text-neutral-900
@@ -56,7 +56,7 @@ const Hero = () => {
                     items-center
                 "
             >
-                I’m Sadie Lee — currently studying cognitive science and data science at UBC. My experience and interests are within applications of data and technology for human health.
+                I’m Sadie Lee — currently studying cognitive science and data science at the University of British Columbia. My experience and interests are within applications of data and technology for human health.
             </div>
             <div className={`flex flex-col pt-20 text-2xl ${font_med.className}`}>
                 Recent Work
@@ -231,7 +231,7 @@ const Hero = () => {
                                 Topological Data Analysis and Interpretability of 3D-Convolutional Neural Networks
                             </div>
                             <div className="text-sm opacity-50 pb-2 group-hover:translate-x-2 ease-in duration-300 transition">
-                                2024 AAAI Undergraduate Consortium
+                               Acceptance - 2024 AAAI Undergraduate Consortium
                             </div>
                         </div>
                     </a>
@@ -242,7 +242,7 @@ const Hero = () => {
                                 Formalizing Ethical Design in Prostate Cancer Image Analysis: Preliminary Case Study
                             </div>
                             <div className="text-sm opacity-50 pb-2 group-hover:translate-x-2 ease-in duration-300 transition">
-                                Work completed during internship at Mayo Clinic Platform
+                                Acceptance - 2024 MIT URTC
                             </div>
                         </div>
                     </a>

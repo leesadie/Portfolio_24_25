@@ -233,7 +233,7 @@ const Hero_Sm = () => {
                             Formalizing Ethical Design in Prostate Cancer Image Analysis: Preliminary Case Study
                         </div>
                         <div className="text-sm opacity-50 pb-2 group-hover:translate-x-2 ease-in duration-300 transition">
-                            Work completed during internship at Mayo Clinic Platform
+                            2024 MIT URTC
                         </div>
                     </div>
                 </a>

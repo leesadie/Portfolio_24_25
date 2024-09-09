@@ -78,7 +78,7 @@ const AboutClient = () => {
                                     </div> 
                                 </a>
                             </div>
-                            <a target="_blank" rel="noopener noreferrer" href="files/Sadie_Lee_Resume.pdf">
+                            <a target="_blank" rel="noopener noreferrer" href="files/Sadie Lee_Resume.pdf">
                                 <div className="pt-6 pb-20 hover:underline hover:underline-offset-4 hover:opacity-70 transition cursor-pointer">
                                     View my resume
                                 </div>

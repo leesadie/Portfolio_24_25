@@ -8,7 +8,7 @@ const ForestarClient = () => {
     const router = useRouter();
 
     return (
-        <div className="flex flex-col lg:mx-80 mx-5">
+        <div className="flex flex-col lg:mx-80 mx-5 pt-24">
             <div className="flex flex-row justify-between">
                 <div className={`lg:text-xl text-base text-neutral-900 ${font_med.className}`}>
                     Forestar Web App

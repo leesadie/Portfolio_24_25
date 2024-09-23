@@ -8,7 +8,7 @@ const ReachoutClient = () => {
     const router = useRouter();
 
     return (
-        <div className="flex flex-col lg:mx-80 mx-5">
+        <div className="flex flex-col lg:mx-80 mx-5 pt-24">
             <div className="flex flex-row justify-between">
                 <div className={`lg:text-xl text-sm text-neutral-900 ${font_med.className}`}>
                     T1D REACHOUT Time in Range
@@ -33,7 +33,7 @@ const ReachoutClient = () => {
             </div>
             <div className="lg:grid lg:grid-cols-5 flex flex-col pt-10 lg:gap-10 gap-5">
                 <div className="flex flex-col col-span-3 text-neutral-900 lg:text-lg text-base">
-                    <div className={`${font_med.className}`}>
+                    <div className={`${font_bold.className}`}>
                         Key Points
                     </div>
                     <div className="pt-5">
@@ -47,7 +47,7 @@ const ReachoutClient = () => {
                     </div>
                 </div>
                 <div className="flex flex-col col-span-1 text-neutral-900 lg:text-lg text-base">
-                    <div className={`${font_med.className}`}>
+                    <div className={`${font_bold.className}`}>
                         Skills
                     </div>
                     <div className="pt-5">
@@ -61,7 +61,7 @@ const ReachoutClient = () => {
                     </div>
                 </div>
                 <div className="flex flex-col col-span-1 text-neutral-900 lg:text-lg text-base">
-                    <div className={`${font_med.className}`}>
+                    <div className={`${font_bold.className}`}>
                         Tools
                     </div>
                     <div className="pt-5">

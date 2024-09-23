@@ -24,9 +24,14 @@ const NavButton: React.FC<ButtonProps> = ({
             onBlur={() => setIsFocused(false)}
             className={`
                 transition
-                ${isHovered ? font_bold.className : ''} 
-                ${isFocused ? font_bold.className : ''}
-                text-neutral-900`}
+                ${isHovered ? 'bg-slate-50' : ''} 
+                ${isFocused ? 'bg-slate-50' : ''}
+                text-neutral-900
+                text-sm
+                rounded-lg
+                py-3
+                px-3
+                ease-out duration-300`}
         >
             {label}
         </button>

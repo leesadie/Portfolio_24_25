@@ -7,6 +7,7 @@ import { IoIosInformationCircleOutline } from "react-icons/io";
 
 import useImagingModal from "../hooks/useImagingModal";
 import Modal from "../Modal";
+import { font_med } from "@/app/fonts";
 
 const ImagingModal = () => {
     const imagingModal = useImagingModal();
@@ -27,7 +28,7 @@ const ImagingModal = () => {
                 <div className="text-neutral-900 opacity-50 pt-5 text-base">
                     Medical Image Analysis
                 </div>
-                <div className="text-netural-900 lg:text-lg text-base">
+                <div className={`text-netural-900 lg:text-lg text-base ${font_med.className}`}>
                     Mayo Clinic Platform
                 </div>
                 <hr className="mt-3"/>
@@ -41,13 +42,13 @@ const ImagingModal = () => {
                 <hr className="mt-3"/>
                 <div className="flex flex-row gap-1 items-center group cursor-pointer">
                     <a target="_blank" rel="noopener noreferrer" href="mailto:leesadie025@gmail.com">
-                        <div className="text-indigo-700 lg:text-lg text-base mt-3 group-hover:underline group-hover:underline-offset-4 group-hover:opacity-50 transition">
+                        <div className="flex flex-row text-neutral-900 mt-2 text-base bg-gray-200 rounded-xl px-3 py-2 group-hover:bg-opacity-50 transition">
                             Email me
+                            <div className="text-neutral-900 group-hover:translate-x-1 transition">
+                                <IoIosArrowRoundForward size={24}/>
+                            </div>
                         </div>
                     </a>
-                    <div className="mt-3 text-indigo-700 group-hover:opacity-50 group-hover:translate-x-1 transition">
-                        <IoIosArrowRoundForward size={24}/>
-                    </div>
                 </div>
                 <hr className="mt-3 mb-10"/>
             </div>

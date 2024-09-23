@@ -46,9 +46,9 @@ const Hero_Sm = () => {
 
 
     return (
-        <div className="flex flex-col mx-5 mt-5">
+        <div className="flex flex-col mx-5 pt-24">
             <div className="text-base text-neutral-900 justify-center items-center">
-                I’m Sadie Lee — currently studying cognitive science and data science at UBC. My experience and interests are within applications of data and technology for human health.
+                I’m Sadie Lee — currently studying cognitive science and data science at UBC. My experience and interests are within human-centered applications of data and emerging technology.
             </div>
             <div className={`flex flex-col pt-10 text-base ${font_bold.className}`}>
                 Recent Work
@@ -227,7 +227,7 @@ const Hero_Sm = () => {
                     </div>
                 </a>
                 <hr className=""/>
-                <a target="_blank" rel="noopener noreferrer" href="files/MIT_URTC_Final.pdf">
+                <a target="_blank" rel="noopener noreferrer" href="files/URTC2024Camera.pdf">
                     <div className="text-sm pt-2 group hover:bg-neutral-300 ease-in duration-300 transition cursor-pointer">
                         <div className="group-hover:translate-x-2 ease-in duration-300 transition">
                             Formalizing Ethical Design in Prostate Cancer Image Analysis: Preliminary Case Study

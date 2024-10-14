@@ -222,7 +222,7 @@ const Hero_Sm = () => {
                             Topological Data Analysis and Interpretability of 3D-Convolutional Neural Networks
                         </div>
                         <div className="text-sm opacity-50 pb-2 group-hover:translate-x-2 ease-in duration-300 transition">
-                            2024 AAAI Undergraduate Consortium
+                            Acceptance - 2024 AAAI Undergraduate Consortium
                         </div>
                     </div>
                 </a>
@@ -233,7 +233,7 @@ const Hero_Sm = () => {
                             Formalizing Ethical Design in Prostate Cancer Image Analysis: Preliminary Case Study
                         </div>
                         <div className="text-sm opacity-50 pb-2 group-hover:translate-x-2 ease-in duration-300 transition">
-                            2024 MIT URTC
+                            Acceptance - 2024 IEEE MIT URTC
                         </div>
                     </div>
                 </a>

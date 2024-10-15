@@ -94,7 +94,6 @@ const Hero_Sm = () => {
                     text-neutral-700
                     justify-center
                     items-center
-                    mx-8
                     pt-10">
                 Hi, I'm Sadie. I study cognitive science and data science at UBC, and work within 
                 applications of data and emerging tech.

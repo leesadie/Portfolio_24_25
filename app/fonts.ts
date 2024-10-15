@@ -1,16 +1,16 @@
 import localFont from 'next/font/local'
 
 export const font_reg = localFont({
-    src: './InterTight-Regular.ttf',
+    src: './HelveticaNeueRoman.otf',
     display: 'swap'
 })
 
 export const font_med = localFont({
-    src: './InterTight-Medium.ttf',
+    src: './HelveticaNeueMedium.otf',
     display: 'swap'
 })
 
 export const font_bold = localFont({
-    src: './InterTight-SemiBold.ttf',
+    src: './HelveticaNeueBold.otf',
     display: 'swap'
 })

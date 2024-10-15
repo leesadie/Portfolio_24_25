@@ -33,14 +33,14 @@ const BCIModal = () => {
                         Image from Hramov, Maksimenko, & Pisarchik (2021) used in the literature review.
                     </div>
                 </div>
-                <div className="text-neutral-900 opacity-50 pt-10 text-base">
-                    HCI Research
+                <div className="text-neutral-700 opacity-50 pt-10 text-sm">
+                    HCI RESEARCH
                 </div>
-                <div className={`text-netural-900 lg:text-lg text-base ${font_med.className}`}>
+                <div className={`text-netural-700 text-base ${font_med.className}`}>
                     UBC MINT
                 </div>
                 <hr className="mt-3"/>
-                <div className="text-neutral-900 mt-3 lg:text-lg text-sm">
+                <div className="text-neutral-700 mt-3 lg:text-base text-sm">
                     Another one of my roles during my time at UBC Multifaceted Innovations in Neurotechnology (MINT) was to 
                     understand interactions between humans and brain computer interfaces (BCI). Specifically, a multi-purpose,
                     reinforcement learning-based BCI was being built.
@@ -48,9 +48,9 @@ const BCIModal = () => {
                 <hr className="mt-3"/>
                 <div className="flex flex-row gap-1 items-center group cursor-pointer">
                     <a target="_blank" rel="noopener noreferrer" href="files/HCI_BCI_Lit_Review.pdf">
-                        <div className="flex flex-row text-neutral-900 mt-2 text-base bg-gray-200 rounded-xl px-3 py-2 group-hover:bg-opacity-50 transition">
+                        <div className="flex flex-row text-neutral-700 mt-2 text-base py-2 group-hover:opacity-50 transition">
                             Read the lit review
-                            <div className="text-neutral-900 group-hover:translate-x-1 transition">
+                            <div className="text-neutral-700 group-hover:translate-x-1 transition">
                                 <IoIosArrowRoundForward size={24}/>
                             </div>
                         </div>

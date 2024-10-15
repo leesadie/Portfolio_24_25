@@ -25,23 +25,23 @@ const BalletModal = () => {
                 />
             </div>
             <div className="lg:mx-20 mx-5 lg:pt-10 pt-5">
-                <div className="text-neutral-900 opacity-50 pt-5 text-base">
-                    Design & Development
+                <div className="text-neutral-700 opacity-50 pt-5 text-sm">
+                    DESIGN & DEVELOPMENT
                 </div>
-                <div className={`text-netural-900 lg:text-lg text-base ${font_med.className}`}>
+                <div className={`text-netural-900 text-base ${font_med.className}`}>
                     UBC Ballet
                 </div>
                 <hr className="mt-3"/>
-                <div className="text-neutral-900 mt-3 lg:text-lg text-sm">
+                <div className="text-neutral-700 mt-3 lg:text-base text-sm">
                     Alongside teaching ballet and coordinating events as Vice President of UBC Ballet,
                     I designed and developed a website to update our branding and overall image.
                 </div>
                 <hr className="mt-3"/>
                 <div className="flex flex-row gap-1 items-center group cursor-pointer">
                     <a target="_blank" rel="noopener noreferrer" href="https://ubcballet.vercel.app/">
-                        <div className="flex flex-row text-neutral-900 mt-2 text-base bg-gray-200 rounded-xl px-3 py-2 group-hover:bg-opacity-50 transition">
+                        <div className="flex flex-row text-neutral-700 mt-2 text-base py-2 group-hover:opacity-50 transition">
                             Visit the website
-                            <div className="text-neutral-900 group-hover:translate-x-1 transition">
+                            <div className="text-neutral-700 group-hover:translate-x-1 transition">
                                 <IoIosArrowRoundForward size={24}/>
                             </div>
                         </div>

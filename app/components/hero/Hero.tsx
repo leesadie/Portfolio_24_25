@@ -16,6 +16,11 @@ import useBCIModal from "../hooks/useBCIModal";
 import BalletModal from "../modals/BalletModal";
 import useBalletModal from "../hooks/useBalletModal";
 
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { IoIosArrowRoundForward } from "react-icons/io"
+
 const Hero = () => {
     const router = useRouter();
 
@@ -46,20 +51,71 @@ const Hero = () => {
 
     return (
         <div className="flex flex-col mx-80">
+            <div 
+                className="
+                    flex 
+                    flex-col
+                    justify-center 
+                    items-center
+                    pt-24"
+            >
+                <Image 
+                    src='/images/me.svg'
+                    alt="me"
+                    height={100}
+                    width={100}
+                    className="rounded-full"
+                />
+            </div>
+            <div className="flex flex-row justify-center items-center pt-10 gap-5">
+                <a target="_blank" rel="noopener noreferrer" href="mailto:leesadie025@gmail.com">
+                    <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
+                        <MdEmail size={24}/>
+                    </div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="mailto:leesadie025@gmail.com">
+                    <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
+                        <FaLinkedin size={24}/>
+                    </div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="mailto:leesadie025@gmail.com">
+                    <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
+                        <FaGithub size={24}/>
+                    </div>
+                </a>
+            </div>
             <div
                 className="
                     lg:text-2xl
-                    lg:pt-24
-                    text-xl
-                    text-neutral-900
+                    lg:pt-10
+                    text-lg
+                    tracking-tight
+                    text-neutral-700
                     justify-center
                     items-center
+                    mx-20
                 "
             >
-                I’m Sadie Lee — currently studying cognitive science and data science at the University of British Columbia. My experience and interests are within human-centered applications of data and emerging technology.
+                Hi, I'm Sadie. I study cognitive science and data science at UBC, and work within 
+                applications of data and emerging tech.
             </div>
-            <div className={`flex flex-col pt-20 text-2xl ${font_med.className}`}>
-                Recent Work
+            <div
+                className="
+                    lg:text-2xl
+                    lg:pt-10
+                    text-lg
+                    tracking-tight
+                    text-neutral-700
+                    justify-center
+                    items-center
+                    mx-20
+                "
+            >
+                I'm interested in roles surrounding visual analytics, data analysis, human-AI interaction,
+                and ML.
+            </div>
+            <div className={`flex flex-col pt-20 text-base text-neutral-700 ${font_bold.className}`}>
+                RECENT WORK
             </div>
             <div
                 className="
@@ -79,7 +135,7 @@ const Hero = () => {
                         height={100}
                         className="w-full object-contain justify-center items-center rounded-2xl min-h-0 h-full transition"
                     />
-                    <div className="flex flex-row justify-between text-lg pt-3">
+                    <div className="flex flex-row justify-between text-neutral-700 text-base pt-3 tracking-tight">
                         <div className="">
                             Mayo Clinic Platform Market Intelligence
                         </div>
@@ -107,7 +163,7 @@ const Hero = () => {
                         height={100}
                         className="w-full object-contain justify-center items-center rounded-2xl min-h-0 h-full transition"
                     />
-                    <div className="flex flex-row justify-between text-lg pt-3">
+                    <div className="flex flex-row justify-between text-neutral-700 text-base pt-3 tracking-tight">
                         <div className="">
                             Mayo Clinic Platform Imaging Process
                         </div>
@@ -135,7 +191,7 @@ const Hero = () => {
                         height={100}
                         className="w-full object-contain justify-center items-center rounded-2xl min-h-0 h-full transition"
                     />
-                    <div className="flex flex-row justify-between text-lg pt-3">
+                    <div className="flex flex-row justify-between text-neutral-700 text-base tracking-tight pt-3">
                         <div className="">
                             T1D REACHOUT Time in Range
                         </div>
@@ -146,19 +202,19 @@ const Hero = () => {
                 </div>
             </div>
             <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-1 pb-20 items-center">
-                <div className="col-span-1 pt-24">
-                    <div className={`row-span-1 text-2xl ${font_med.className}`}>
-                        Previous Experience
+                <div className="col-span-1 pt-20">
+                    <div className={`row-span-1 text-base text-neutral-700 ${font_bold.className}`}>
+                        PREVIOUS WORK
                     </div>
                     <hr className="bg-neutral-300 mt-5 mr-5"/>
                     <div 
-                        className="text-lg mr-5 pt-2 group hover:bg-neutral-300 ease-in duration-300 transition cursor-pointer"
+                        className="text-base mr-5 pt-2 group hover:bg-neutral-300 ease-in duration-300 transition cursor-pointer"
                         onClick={() => router.push('/forestar')}
                     >
-                        <div className="group-hover:translate-x-2 ease-in duration-300 transition">
+                        <div className="text-neutral-700 group-hover:translate-x-2 ease-in duration-300 transition">
                             Forestar Web App
                         </div>
-                        <div className="text-base flex flex-row justify-between mr-5 opacity-50">
+                        <div className="text-neutral-700 text-base flex flex-row justify-between mr-5 opacity-50">
                             <div className="group-hover:translate-x-2 ease-in duration-300 transition">
                                 Full Stack Development
                             </div>
@@ -169,13 +225,13 @@ const Hero = () => {
                     </div>
                     <hr className="bg-neutral-300 mr-5"/>
                     <div 
-                        className="text-lg pt-2 mr-5 group hover:bg-neutral-300 ease-in duration-300 transition cursor-pointer"
+                        className="text-base pt-2 mr-5 group hover:bg-neutral-300 ease-in duration-300 transition cursor-pointer"
                         onClick={onClassif}
                     >
-                        <div className="group-hover:translate-x-2 ease-in duration-300 transition">
+                        <div className="text-neutral-700 group-hover:translate-x-2 ease-in duration-300 transition">
                             Brain Tumor Classification
                         </div>
-                        <div className="text-base flex flex-row justify-between mr-5 opacity-50">
+                        <div className="text-base text-neutral-700 flex flex-row justify-between mr-5 opacity-50">
                             <div className="group-hover:translate-x-2 ease-in duration-300 transition">
                                 Deep Learning
                             </div>
@@ -186,7 +242,7 @@ const Hero = () => {
                     </div>
                     <hr className="bg-neutral-300 mr-5"/>
                     <div 
-                        className="text-lg mr-5 pt-2 group hover:bg-neutral-300 transition cursor-pointer"
+                        className="text-base text-neutral-700 mr-5 pt-2 group hover:bg-neutral-300 transition cursor-pointer"
                         onClick={onBCI}
                     >
                         <div className="group-hover:translate-x-2 ease-in duration-300 transition">
@@ -203,7 +259,7 @@ const Hero = () => {
                     </div>
                     <hr className="bg-neutral-300 mr-5"/>
                     <div 
-                        className="text-lg pt-2 mr-5 group hover:bg-neutral-300 ease-in duration-300 transition cursor-pointer"
+                        className="text-base text-neutral-700 pt-2 mr-5 group hover:bg-neutral-300 ease-in duration-300 transition cursor-pointer"
                         onClick={onBallet}
                     >
                         <div className="group-hover:translate-x-2 ease-in duration-300 transition">
@@ -221,12 +277,12 @@ const Hero = () => {
                     <hr className="bg-neutral-300 mr-5"/>
                 </div>
                 <div className="col-span-1">
-                    <div className={`row-span-1 text-2xl ${font_med.className}`}>
-                        Research
+                    <div className={`row-span-1 text-base ${font_bold.className}`}>
+                        RESEARCH
                     </div>
                     <hr className="mt-5 bg-neutral-300"/>
                     <a target="_blank" rel="noopener noreferrer" href="files/AAAI_UC_Proposal.pdf">
-                        <div className="text-base pt-2 group hover:bg-neutral-300 ease-in duration-300 transition cursor-pointer">
+                        <div className="text-base text-neutral-700 pt-2 group hover:bg-neutral-300 ease-in duration-300 transition cursor-pointer">
                             <div className="group-hover:translate-x-2 ease-in duration-300 transition">
                                 Topological Data Analysis and Interpretability of 3D-Convolutional Neural Networks
                             </div>
@@ -237,7 +293,7 @@ const Hero = () => {
                     </a>
                     <hr className=""/>
                     <a target="_blank" rel="noopener noreferrer" href="files/URTC2024Camera.pdf">
-                        <div className="text-base pt-2 group hover:bg-neutral-300 ease-in duration-300 transition cursor-pointer">
+                        <div className="text-base text-neutral-700 pt-2 group hover:bg-neutral-300 ease-in duration-300 transition cursor-pointer">
                             <div className="group-hover:translate-x-2 ease-in duration-300 transition">
                                 Formalizing Ethical Design in Prostate Cancer Image Analysis: Preliminary Case Study
                             </div>
@@ -247,6 +303,15 @@ const Hero = () => {
                         </div>
                     </a>
                     <hr className="pt-2"/>
+                </div>
+            </div>
+            <div className="flex flex-row items-center justify-center pb-20 group gap-1 text-base text-neutral-700 opacity-50 "
+                onClick={() => router.push('/lab')}>
+               <div className="group-hover:opacity-50 transition cursor-pointer">
+                    Go exploring
+                </div> 
+                <div className="group-hover:opacity-50 group-hover:translate-x-1 transition cursor-pointer">
+                    <IoIosArrowRoundForward size={24}/>
                 </div>
             </div>
             <div>

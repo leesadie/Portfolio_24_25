@@ -13,8 +13,8 @@ const ForestarClient = () => {
                 <div className={`lg:text-xl text-base text-neutral-900 ${font_med.className}`}>
                     Forestar Web App
                 </div>
-                <div className="lg:text-lg text-base text-neutral-900 opacity-50">
-                    Summer 2023
+                <div className="text-base text-neutral-700 opacity-50">
+                    SUMMER 2023
                 </div>
             </div>
             <div className="pt-5">
@@ -26,15 +26,15 @@ const ForestarClient = () => {
                     className="w-full object-contain justify-center items-center rounded-xl min-h-0 h-full"
                 />
             </div>
-            <div className="lg:text-xl text-base text-neutral-900 pt-5">
+            <div className="lg:text-lg tracking-tight text-base text-neutral-900 pt-5">
             Forestar is an extension of a 2022 UBC Faculty of Forestry clinical trial that studied the health merits
             of forest bathing (森林浴), during which participants faced challenges with mobility, transportation,
             illness, and/or guidance.
             </div>
             <div className="lg:grid lg:grid-cols-5 flex flex-col pt-10 lg:gap-10 gap-5">
-                <div className="flex flex-col col-span-3 text-neutral-900 lg:text-lg text-base">
+                <div className="flex flex-col col-span-3 text-neutral-700 text-base">
                     <div className={`${font_bold.className}`}>
-                        Key Points
+                        KEY POINTS
                     </div>
                     <div className="pt-5">
                         The web app provides self-guided forest bathing to mitigate
@@ -51,9 +51,9 @@ const ForestarClient = () => {
                         sense at a given location along the route.
                     </div>
                 </div>
-                <div className="flex flex-col col-span-1 text-neutral-900 lg:text-lg text-base">
+                <div className="flex flex-col col-span-1 text-neutral-700 text-base">
                     <div className={`${font_bold.className}`}>
-                        Skills
+                        SKILLS
                     </div>
                     <div className="pt-5">
                         Mobile-first design
@@ -65,9 +65,9 @@ const ForestarClient = () => {
                         Backend dev
                     </div>
                 </div>
-                <div className="flex flex-col col-span-1 text-neutral-900 lg:text-lg text-base">
+                <div className="flex flex-col col-span-1 text-neutral-700 text-base">
                     <div className={`${font_bold.className}`}>
-                        Tools
+                        TOOLS
                     </div>
                     <div className="pt-5">
                         React

@@ -110,11 +110,10 @@ const Modal: React.FC<ModalProps> = ({
                                         pt-20
                                         border-0
                                         hover:opacity-50
-                                        hover:underline
-                                        hover:underline-offset-4
                                         transition
                                         absolute
                                         text-sm
+                                        text-neutral-700
                                     "
                                 >
                                     Back

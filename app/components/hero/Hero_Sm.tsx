@@ -16,6 +16,12 @@ import useBCIModal from "../hooks/useBCIModal";
 import BalletModal from "../modals/BalletModal";
 import useBalletModal from "../hooks/useBalletModal";
 
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { IoDocumentTextSharp } from "react-icons/io5";
+import { IoIosArrowRoundForward } from "react-icons/io";
+
 const Hero_Sm = () => {
     const router = useRouter();
 
@@ -46,12 +52,64 @@ const Hero_Sm = () => {
 
 
     return (
-        <div className="flex flex-col mx-5 pt-24">
-            <div className="text-base text-neutral-900 justify-center items-center">
-                I’m Sadie Lee — currently studying cognitive science and data science at UBC. My experience and interests are within human-centered applications of data and emerging technology.
+        <div className="flex flex-col mx-5 pt-20">
+            <div 
+                className="
+                    flex 
+                    flex-col
+                    justify-center 
+                    items-center"
+            >
+                <Image 
+                    src='/images/me.svg'
+                    alt="me"
+                    height={100}
+                    width={100}
+                    className="rounded-full"
+                />
             </div>
-            <div className={`flex flex-col pt-10 text-base ${font_bold.className}`}>
-                Recent Work
+            <div className="flex flex-row justify-center items-center pt-10 gap-5">
+                <a target="_blank" rel="noopener noreferrer" href="mailto:leesadie025@gmail.com">
+                    <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
+                        <MdEmail size={24}/>
+                    </div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/leesadie/">
+                    <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
+                        <FaLinkedin size={24}/>
+                    </div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/leesadie">
+                    <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
+                        <FaGithub size={24}/>
+                    </div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="files/Sadie_Lee_Resume.pdf">
+                    <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
+                        <IoDocumentTextSharp size={24}/>
+                    </div>
+                </a>
+            </div>
+            <div className="tracking-tight
+                    text-neutral-700
+                    justify-center
+                    items-center
+                    mx-8
+                    pt-10">
+                Hi, I'm Sadie. I study cognitive science and data science at UBC, and work within 
+                applications of data and emerging tech.
+            </div>
+            <div className="tracking-tight
+                    text-neutral-700
+                    justify-center
+                    items-center
+                    mx-8
+                    pt-6">
+                My interests surround visual analytics, data analysis, human-AI interaction,
+                and ML.
+            </div>
+            <div className={`flex flex-col pt-10 text-sm ${font_bold.className}`}>
+                RECENT WORK
             </div>
             <div
                 className="
@@ -138,8 +196,8 @@ const Hero_Sm = () => {
                 </div>
             </div>
             <div className="flex flex-col pt-10">
-                <div className={`text-base ${font_bold.className}`}>
-                    Previous Experience
+                <div className={`text-sm ${font_bold.className}`}>
+                    PREVIOUS WORK
                 </div>
                 <hr className="bg-neutral-300 mt-5"/>
                 <div 
@@ -212,8 +270,8 @@ const Hero_Sm = () => {
                 <hr className="bg-neutral-300"/>
             </div>
             <div className="flex flex-col pt-10">
-                <div className={`text-base ${font_bold.className}`}>
-                    Research
+                <div className={`text-sm ${font_bold.className}`}>
+                    RESEARCH
                 </div>
                 <hr className="mt-5 bg-neutral-300"/>
                 <a target="_blank" rel="noopener noreferrer" href="files/AAAI_UC_Proposal.pdf">
@@ -238,6 +296,15 @@ const Hero_Sm = () => {
                     </div>
                 </a>
                 <hr className="pt-2 pb-10"/>
+            </div>
+            <div className="flex flex-row items-center justify-center pb-20 group gap-1 text-sm text-neutral-700 opacity-50 "
+                onClick={() => router.push('/lab')}>
+               <div className="group-hover:opacity-50 transition cursor-pointer">
+                    Go exploring
+                </div> 
+                <div className="group-hover:opacity-50 group-hover:translate-x-1 transition cursor-pointer">
+                    <IoIosArrowRoundForward size={20}/>
+                </div>
             </div>
             <div>
                 <DashboardModal />

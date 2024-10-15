@@ -19,6 +19,7 @@ import useBalletModal from "../hooks/useBalletModal";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { IoDocumentTextSharp } from "react-icons/io5";
 import { IoIosArrowRoundForward } from "react-icons/io"
 
 const Hero = () => {
@@ -73,21 +74,26 @@ const Hero = () => {
                         <MdEmail size={24}/>
                     </div>
                 </a>
-                <a target="_blank" rel="noopener noreferrer" href="mailto:leesadie025@gmail.com">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/leesadie/">
                     <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
                         <FaLinkedin size={24}/>
                     </div>
                 </a>
-                <a target="_blank" rel="noopener noreferrer" href="mailto:leesadie025@gmail.com">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/leesadie">
                     <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
                         <FaGithub size={24}/>
+                    </div>
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="files/Sadie_Lee_Resume.pdf">
+                    <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
+                        <IoDocumentTextSharp size={24}/>
                     </div>
                 </a>
             </div>
             <div
                 className="
                     lg:text-2xl
-                    lg:pt-10
+                    lg:pt-20
                     text-lg
                     tracking-tight
                     text-neutral-700
@@ -111,7 +117,7 @@ const Hero = () => {
                     mx-20
                 "
             >
-                I'm interested in roles surrounding visual analytics, data analysis, human-AI interaction,
+                My interests surround visual analytics, data analysis, human-AI interaction,
                 and ML.
             </div>
             <div className={`flex flex-col pt-20 text-base text-neutral-700 ${font_bold.className}`}>

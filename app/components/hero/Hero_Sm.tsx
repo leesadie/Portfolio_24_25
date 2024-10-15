@@ -102,7 +102,6 @@ const Hero_Sm = () => {
                     text-neutral-700
                     justify-center
                     items-center
-                    mx-8
                     pt-6">
                 My interests surround visual analytics, data analysis, human-AI interaction,
                 and ML.

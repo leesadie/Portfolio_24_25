@@ -61,7 +61,7 @@ const Hero = () => {
                     pt-24"
             >
                 <Image 
-                    src='/images/me.svg'
+                    src='/images/about1.svg'
                     alt="me"
                     height={100}
                     width={100}

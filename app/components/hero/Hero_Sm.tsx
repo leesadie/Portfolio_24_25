@@ -96,15 +96,14 @@ const Hero_Sm = () => {
                     items-center
                     pt-10">
                 Hi, I'm Sadie. I study cognitive science and data science at UBC, and work within 
-                applications of data and emerging tech.
+                applications of data & technology for human health.
             </div>
             <div className="tracking-tight
                     text-neutral-700
                     justify-center
                     items-center
                     pt-6">
-                My interests surround visual analytics, data analysis, human-AI interaction,
-                and ML.
+                My experience and interests surround data analysis, visual analytics, digital health, and AI safety.
             </div>
             <div className={`flex flex-col pt-10 text-sm ${font_bold.className}`}>
                 RECENT WORK
@@ -195,7 +194,7 @@ const Hero_Sm = () => {
             </div>
             <div className="flex flex-col pt-10">
                 <div className={`text-sm ${font_bold.className}`}>
-                    PREVIOUS WORK
+                    PREVIOUS PROJECTS
                 </div>
                 <hr className="bg-neutral-300 mt-5"/>
                 <div 

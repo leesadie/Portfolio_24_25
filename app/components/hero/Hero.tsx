@@ -61,7 +61,7 @@ const Hero = () => {
                     pt-24"
             >
                 <Image 
-                    src='/images/about1.svg'
+                    src='/images/me.svg'
                     alt="me"
                     height={100}
                     width={100}
@@ -84,7 +84,7 @@ const Hero = () => {
                         <FaGithub size={24}/>
                     </div>
                 </a>
-                <a target="_blank" rel="noopener noreferrer" href="files/Sadie_Lee_Resume.pdf">
+                <a target="_blank" rel="noopener noreferrer" href="files/Sadie_Lee_Resume2.pdf">
                     <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
                         <IoDocumentTextSharp size={24}/>
                     </div>
@@ -103,7 +103,7 @@ const Hero = () => {
                 "
             >
                 Hi, I'm Sadie. I study cognitive science and data science at UBC, and work within 
-                applications of data and emerging tech.
+                applications of data & technology for human health.
             </div>
             <div
                 className="
@@ -117,8 +117,7 @@ const Hero = () => {
                     mx-20
                 "
             >
-                My interests surround visual analytics, data analysis, human-AI interaction,
-                and ML.
+                My experience and interests surround data analysis & visualization, digital health, and AI safety.
             </div>
             <div className={`flex flex-col pt-20 text-base text-neutral-700 ${font_bold.className}`}>
                 RECENT WORK
@@ -210,7 +209,7 @@ const Hero = () => {
             <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-1 pb-20 items-center">
                 <div className="col-span-1 pt-20">
                     <div className={`row-span-1 text-base text-neutral-700 ${font_bold.className}`}>
-                        PREVIOUS WORK
+                        PREVIOUS PROJECTS
                     </div>
                     <hr className="bg-neutral-300 mt-5 mr-5"/>
                     <div 
@@ -311,12 +310,12 @@ const Hero = () => {
                     <hr className="pt-2"/>
                 </div>
             </div>
-            <div className="flex flex-row items-center justify-center pb-20 group gap-1 text-base text-neutral-700 opacity-50 "
+            <div className="flex flex-row items-center justify-center mb-20 group gap-1 text-base text-neutral-500"
                 onClick={() => router.push('/lab')}>
-               <div className="group-hover:opacity-50 transition cursor-pointer">
+               <div className="group-hover:text-black group-hover:font-bold group-hover:opacity-100 group-hover:underline group-hover:underline-offset-8 transition cursor-pointer">
                     Go exploring
                 </div> 
-                <div className="group-hover:opacity-50 group-hover:translate-x-1 transition cursor-pointer">
+                <div className="group-hover:text-neutral-900 group-hover:font-bold group-hover:opacity-100 group-hover:translate-x-1 transition cursor-pointer">
                     <IoIosArrowRoundForward size={24}/>
                 </div>
             </div>

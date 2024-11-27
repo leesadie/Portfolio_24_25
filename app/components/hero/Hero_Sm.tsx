@@ -103,7 +103,7 @@ const Hero_Sm = () => {
                     justify-center
                     items-center
                     pt-6">
-                My experience and interests surround data analysis, visual analytics, digital health, and AI safety.
+                My experience and interests surround data analysis & visualization, ML, digital health, and AI ethics.
             </div>
             <div className={`flex flex-col pt-10 text-sm ${font_bold.className}`}>
                 RECENT WORK

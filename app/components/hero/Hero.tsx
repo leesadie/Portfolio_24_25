@@ -117,7 +117,7 @@ const Hero = () => {
                     mx-20
                 "
             >
-                My experience and interests surround data analysis & visualization, digital health, and AI safety.
+                My experience and interests surround data analysis & visualization, ML, digital health, and AI ethics.
             </div>
             <div className={`flex flex-col pt-20 text-base text-neutral-700 ${font_bold.className}`}>
                 RECENT WORK

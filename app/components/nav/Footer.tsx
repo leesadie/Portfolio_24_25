@@ -5,27 +5,50 @@ import Container from "../Container";
 
 const Footer = () => {
     return (
-        <div className="w-full z-10">
+        <div className="mx-80 z-10">
             <div className="pb-10">
-                <Container>
-                    <div
-                        className="
-                            flex
-                            flex-row
-                            items-center
-                            justify-center
-                            text-sm
-                            text-neutral-900
-                            opacity-50
-                            gap-1
-                        "
-                    >
-                        <div>
-                            Thanks for visiting
-                        </div>
-                        <CiFaceSmile />
+                <div
+                    className="
+                        flex
+                        flex-row
+                        items-center
+                        justify-between
+                        text-sm
+                        text-neutral-900
+                        opacity-50
+                        gap-1
+                    "
+                >
+                    <div>
+                        2024-2025 Portfolio by Sadie Lee
                     </div>
-                </Container>
+                    <div className="flex flex-row gap-5">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="mailto:leesadie025@gmail.com"
+                            className="hover:opacity-50 transition cursor-pointer"
+                        >
+                            Email
+                        </a>
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.linkedin.com/in/leesadie/"
+                            className="hover:opacity-50 transition cursor-pointer"
+                        >
+                            LinkedIn
+                        </a>
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://github.com/leesadie"
+                            className="hover:opacity-50 transition cursor-pointer"
+                        >
+                            Github
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     );

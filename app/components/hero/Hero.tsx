@@ -19,8 +19,9 @@ import useBalletModal from "../hooks/useBalletModal";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { IoDocumentTextSharp } from "react-icons/io5";
-import { IoIosArrowRoundForward } from "react-icons/io"
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { FaLocationArrow } from "react-icons/fa";
+import { TbLocationFilled } from "react-icons/tb";
 
 const Hero = () => {
     const router = useRouter();
@@ -60,6 +61,7 @@ const Hero = () => {
                     items-center
                     pt-24"
             >
+                {/*
                 <Image 
                     src='/images/me.svg'
                     alt="me"
@@ -67,57 +69,42 @@ const Hero = () => {
                     width={100}
                     className="rounded-full"
                 />
-            </div>
-            <div className="flex flex-row justify-center items-center pt-10 gap-5">
-                <a target="_blank" rel="noopener noreferrer" href="mailto:leesadie025@gmail.com">
-                    <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
-                        <MdEmail size={24}/>
-                    </div>
-                </a>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/leesadie/">
-                    <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
-                        <FaLinkedin size={24}/>
-                    </div>
-                </a>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/leesadie">
-                    <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
-                        <FaGithub size={24}/>
-                    </div>
-                </a>
-                <a target="_blank" rel="noopener noreferrer" href="files/Sadie_Lee_Resume2.pdf">
-                    <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
-                        <IoDocumentTextSharp size={24}/>
-                    </div>
-                </a>
+                */}
             </div>
             <div
                 className="
                     lg:text-2xl
                     lg:pt-20
                     text-lg
-                    tracking-tight
                     text-neutral-700
-                    justify-center
-                    items-center
-                    mx-20
+                    
                 "
             >
-                Hi, I'm Sadie. I study cognitive science and data science at UBC, and work within 
-                applications of data & technology for human health.
+                Hi, I'm Sadie, I'm currently studying cognitive science and data science at the University of British Columbia. 
+                My experience and interests are within applications of data and technology for human health.
             </div>
-            <div
-                className="
-                    lg:text-2xl
-                    lg:pt-10
-                    text-lg
-                    tracking-tight
-                    text-neutral-700
-                    justify-center
-                    items-center
-                    mx-20
-                "
-            >
-                My experience and interests surround data analysis & visualization, ML, digital health, and AI ethics.
+            <div className="flex justify-between items-center">
+                <div className="flex flex-row pt-5 gap-3">
+                    <a target="_blank" rel="noopener noreferrer" href="mailto:leesadie025@gmail.com">
+                        <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
+                            <MdEmail size={24}/>
+                        </div>
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/leesadie/">
+                        <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
+                            <FaLinkedin size={24}/>
+                        </div>
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/leesadie">
+                        <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
+                            <FaGithub size={24}/>
+                        </div>
+                    </a>
+                </div>
+                <div className="flex flex-row gap-1 text-neutral-900 pt-5 text-sm underline underline-offset-4">
+                    <TbLocationFilled size={18} className="opacity-75"/>
+                    Open to summer 2025 internships
+                </div>
             </div>
             <div className={`flex flex-col pt-20 text-base text-neutral-700 ${font_bold.className}`}>
                 RECENT WORK
@@ -198,7 +185,7 @@ const Hero = () => {
                     />
                     <div className="flex flex-row justify-between text-neutral-700 text-base tracking-tight pt-3">
                         <div className="">
-                            T1D REACHOUT Time in Range
+                            BCCHR T1D REACHOUT Time in Range
                         </div>
                         <div className="opacity-50">
                             Data Analysis & Visualization
@@ -308,15 +295,6 @@ const Hero = () => {
                         </div>
                     </a>
                     <hr className="pt-2"/>
-                </div>
-            </div>
-            <div className="flex flex-row items-center justify-center mb-20 group gap-1 text-base text-neutral-500"
-                onClick={() => router.push('/lab')}>
-               <div className="group-hover:text-black group-hover:font-bold group-hover:opacity-100 group-hover:underline group-hover:underline-offset-8 transition cursor-pointer">
-                    Go exploring
-                </div> 
-                <div className="group-hover:text-neutral-900 group-hover:font-bold group-hover:opacity-100 group-hover:translate-x-1 transition cursor-pointer">
-                    <IoIosArrowRoundForward size={24}/>
                 </div>
             </div>
             <div>

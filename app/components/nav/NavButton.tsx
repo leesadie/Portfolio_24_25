@@ -6,11 +6,13 @@ import { useState } from "react";
 interface ButtonProps {
     label: string;
     onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+    bg?: boolean;
 }
 
 const NavButton: React.FC<ButtonProps> = ({
     label,
-    onClick
+    onClick,
+    bg
 }) => {
     const [isHovered, setIsHovered] = useState(false);
     const [isFocused, setIsFocused] = useState(false)
@@ -24,14 +26,16 @@ const NavButton: React.FC<ButtonProps> = ({
             onBlur={() => setIsFocused(false)}
             className={`
                 transition
-                ${isHovered ? 'bg-slate-50' : ''} 
-                ${isFocused ? 'bg-slate-50' : ''}
+                ${isHovered ? 'opacity-50' : ''} 
+                ${isFocused ? 'opacity-50' : ''}
+                ${bg ? 'bg-neutral-200' : 'bg-none'}
                 text-neutral-900
                 text-sm
-                rounded-lg
-                py-3
-                px-3
-                ease-out duration-300`}
+                rounded-md
+                py-2
+                px-4
+                ease-out duration-300
+                cursor-pointer`}
         >
             {label}
         </button>

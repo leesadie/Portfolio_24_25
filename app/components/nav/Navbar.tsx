@@ -16,51 +16,26 @@ const Navbar = () => {
                     <div
                         className="
                             flex
+                            flex-row
                             items-center
                             justify-between
                             text-neutral-900
                         "
                     >
                         {/* Left Text */}
-                        <div className={`${font_bold.className} text-neutral-900 text-2xl cursor-pointer hidden md:block`}
+                        <div className={`${font_bold.className} text-neutral-900 text-xl cursor-pointer hidden md:block`}
                             onClick={() => router.push('/')}>
                             SL.
                         </div>
                         {/* Navigation Buttons */}
-                        <div className={`flex space-x-2 bg-gray-200 shadow-sm rounded-xl mx-auto md:mx-none bg-opacity-70 ${font_med.className}`}>
-                            <NavButton 
-                                label="Work"
-                                onClick={() => router.push('/')} 
-                            />
+                        <div className={`flex flex-row ${font_med.className}`}>
                             <NavButton 
                                 label="About"
                                 onClick={() => router.push('/about')} 
                             />
-                            <NavButton 
-                                label="Exploration"
-                                onClick={() => router.push('/lab')} 
-                            />
-                        </div>
-                        {/* Right Text */}
-                        <div 
-                            className=
-                                {`${font_bold.className} 
-                                text-neutral-900
-                                cursor-pointer 
-                                hidden 
-                                md:block
-                                rounded-xl
-                                hover:bg-gray-200
-                                px-3
-                                py-2
-                                transition
-                                ease-out
-                                duration-300`}
-                            onClick={() => router.push('/')}
-                        >
-                            <a target="_blank" rel="noopener noreferrer" href="mailto:leesadie025@gmail.com">
-                                <div>
-                                    Connect
+                            <a target="_blank" rel="noopener noreferrer" href="files/Sadie_Lee_Resume2.pdf">
+                                <div className="text-neutral-900 bg-neutral-200 hover:opacity-50 text-sm rounded-md py-2 px-4 ease-out duration-300 transition">
+                                    Resume
                                 </div>
                             </a>
                         </div>

@@ -60,6 +60,7 @@ const Hero_Sm = () => {
                     justify-center 
                     items-center"
             >
+                {/* 
                 <Image 
                     src='/images/about1.svg'
                     alt="me"
@@ -67,50 +68,39 @@ const Hero_Sm = () => {
                     width={100}
                     className="rounded-full"
                 />
+                */}
             </div>
-            <div className="flex flex-row justify-center items-center pt-10 gap-5">
+            <div
+                className="
+                    text-neutral-700
+                "
+            >
+                Hi, I'm Sadie, I'm currently studying cognitive science and data science at UBC. 
+                My experience and interests are within applications of data and technology for human health.
+            </div>
+            <div className="flex flex-row justify-start pt-5 gap-3">
                 <a target="_blank" rel="noopener noreferrer" href="mailto:leesadie025@gmail.com">
                     <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
-                        <MdEmail size={24}/>
+                        <MdEmail size={20}/>
                     </div>
                 </a>
                 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/leesadie/">
                     <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
-                        <FaLinkedin size={24}/>
+                        <FaLinkedin size={20}/>
                     </div>
                 </a>
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/leesadie">
                     <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
-                        <FaGithub size={24}/>
+                        <FaGithub size={20}/>
                     </div>
                 </a>
-                <a target="_blank" rel="noopener noreferrer" href="files/Sadie_Lee_Resume.pdf">
-                    <div className="text-neutral-900 opacity-50 hover:opacity-30 transition">
-                        <IoDocumentTextSharp size={24}/>
-                    </div>
-                </a>
-            </div>
-            <div className="tracking-tight
-                    text-neutral-700
-                    justify-center
-                    items-center
-                    pt-10">
-                Hi, I'm Sadie. I study cognitive science and data science at UBC, and work within 
-                applications of data & technology for human health.
-            </div>
-            <div className="tracking-tight
-                    text-neutral-700
-                    justify-center
-                    items-center
-                    pt-6">
-                My experience and interests surround data analysis & visualization, ML, digital health, and AI ethics.
             </div>
             <div className={`flex flex-col pt-10 text-sm ${font_bold.className}`}>
                 RECENT WORK
             </div>
             <div
                 className="
-                    pt-10
+                    pt-5
                     cursor-pointer
                     group
                 "
@@ -293,15 +283,6 @@ const Hero_Sm = () => {
                     </div>
                 </a>
                 <hr className="pt-2 pb-10"/>
-            </div>
-            <div className="flex flex-row items-center justify-center pb-20 group gap-1 text-sm text-neutral-700 opacity-50 "
-                onClick={() => router.push('/lab')}>
-               <div className="group-hover:opacity-50 transition cursor-pointer">
-                    Go exploring
-                </div> 
-                <div className="group-hover:opacity-50 group-hover:translate-x-1 transition cursor-pointer">
-                    <IoIosArrowRoundForward size={20}/>
-                </div>
             </div>
             <div>
                 <DashboardModal />

@@ -5,21 +5,22 @@ import Container from "../Container";
 
 const Footer = () => {
     return (
-        <div className="mx-80 z-10">
+        <div className="md:mx-80 z-10">
             <div className="pb-10">
                 <div
                     className="
                         flex
                         flex-row
                         items-center
-                        justify-between
+                        md:justify-between
+                        justify-center
                         text-sm
                         text-neutral-900
                         opacity-50
                         gap-1
                     "
                 >
-                    <div>
+                    <div className="hidden md:block">
                         2024-2025 Portfolio by Sadie Lee
                     </div>
                     <div className="flex flex-row gap-5">

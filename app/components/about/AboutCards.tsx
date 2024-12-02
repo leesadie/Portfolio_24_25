@@ -70,51 +70,6 @@ const AboutCards: React.FC = () => {
                         continuing to experience new things.
                     </p>
                 </div>
-
-                {/* Professional Interests
-                <div className="flex flex-row justify-between w-full max-w-6xl mt-8 self-start items-start">
-                    <div className="flex flex-col text-neutral-900 lg:text-base text-sm">
-                        <div className={`${font_med.className}`}>
-                            Professional Interests
-                        </div>
-                        <div className="pt-3">Data analysis & visualization</div>
-                        <div>Digital health</div>
-                        <div>AI ethics</div>
-                        <div>Machine learning</div>
-                    </div>
-                    <div className="flex flex-col text-neutral-900 lg:text-base text-sm">
-                        <div className={`${font_med.className}`}>
-                            Contact
-                        </div>
-                        <div className="flex flex-col pt-3">
-                            <a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="mailto:leesadie025@gmail.com"
-                                className="hover:opacity-50 transition cursor-pointer"
-                            >
-                                Email
-                            </a>
-                            <a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="https://www.linkedin.com/in/leesadie/"
-                                className="hover:opacity-50 transition cursor-pointer"
-                            >
-                                LinkedIn
-                            </a>
-                            <a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="https://github.com/leesadie"
-                                className="hover:opacity-50 transition cursor-pointer"
-                            >
-                                Github
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                */}
             </div>
     </section>
     );

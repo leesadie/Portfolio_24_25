@@ -20,10 +20,12 @@ const Navbar = () => {
                             items-center
                             justify-between
                             text-neutral-900
+                            mx-5
+                            md:mx-0
                         "
                     >
                         {/* Left Text */}
-                        <div className={`${font_bold.className} text-neutral-900 text-xl cursor-pointer hidden md:block`}
+                        <div className={`${font_bold.className} text-neutral-900 text-xl cursor-pointer`}
                             onClick={() => router.push('/')}>
                             SL.
                         </div>

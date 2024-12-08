@@ -76,7 +76,7 @@ const Hero_Sm = () => {
                 "
             >
                 Hi, I'm Sadie, I'm currently studying cognitive science and data science at UBC. 
-                My experience and interests are within applications of data and technology for human health.
+                My experience and interests are within ethical applications of data and technology for human health.
             </div>
             <div className="flex flex-row justify-start pt-5 gap-3">
                 <a target="_blank" rel="noopener noreferrer" href="mailto:leesadie025@gmail.com">

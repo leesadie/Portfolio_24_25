@@ -81,7 +81,7 @@ const Hero = () => {
                 "
             >
                 Hi, I'm Sadie, I'm currently studying cognitive science and data science at the University of British Columbia. 
-                My experience and interests are within applications of data and technology for human health.
+                My experience and interests are within ethical applications of data and technology for human health.
             </div>
             <div className="flex justify-between items-center">
                 <div className="flex flex-row pt-5 gap-3">

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { IoIosInformationCircleOutline } from "react-icons/io";
 
 import useImagingModal from "../hooks/useImagingModal";
 import Modal from "../Modal";
@@ -24,7 +23,7 @@ const ImagingModal = () => {
                     className="w-full h-1/2  object-contain justify-center items-center min-h-0 h-full transition"
                 />
             </div>
-            <div className="lg:mx-20 mx-5 lg:pt-10 pt-5">
+            <div className="lg:mx-20 mx-5 pt-5">
                 <div className="text-neutral-700 opacity-50 pt-5 text-sm">
                     MEDICAL IMAGE ANALYSIS
                 </div>
@@ -34,23 +33,25 @@ const ImagingModal = () => {
                 <hr className="mt-3"/>
                 <div className="text-neutral-900 mt-3 lg:text-base tracking-tight text-sm">
                     During my internship at Mayo Clinic Platform, I worked with the 
-                    Accelerate team to estsablish a process for health tech startups to use
-                    imaging modality data. I developed a use case with prostate MR images and 
-                    defined a cohort, annotated potential abnormalities, built models, and
-                    documented known issues.
+                    Accelerate team to estsablish a process for health tech startups building
+                    products with imaging modalities (e.g. MR, CT, PET).
+                    <br /> 
+                    I developed a use case with DICOM standard prostate MR images, defining a cohort, 
+                    annotating potential abnormalities, building segmentation and classification models 
+                    with both PyTorch and Tensorflow, and documenting known issues.
                 </div>
                 <hr className="mt-3"/>
                 <div className="flex flex-row gap-1 items-center group cursor-pointer">
                     <a target="_blank" rel="noopener noreferrer" href="mailto:leesadie025@gmail.com">
-                        <div className="flex flex-row text-neutral-700 mt-2 text-base py-2 group-hover:opacity-50 transition">
+                        <div className="text-indigo-700 flex flex-row text-neutral-700 mt-2 text-base py-2 group-hover:opacity-50 transition">
                             Email me
-                            <div className="text-neutral-700 group-hover:translate-x-1 transition">
-                                <IoIosArrowRoundForward size={24}/>
+                            <div className="group-hover:translate-x-1 transition">
+                                <IoIosArrowRoundForward size={24} className="text-indigo-700"/>
                             </div>
                         </div>
                     </a>
                 </div>
-                <hr className="mt-3 mb-10"/>
+                <hr className="mt-3"/>
             </div>
         </div>
     )

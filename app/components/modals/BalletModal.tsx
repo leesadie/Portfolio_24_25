@@ -33,21 +33,21 @@ const BalletModal = () => {
                 </div>
                 <hr className="mt-3"/>
                 <div className="text-neutral-700 mt-3 lg:text-base text-sm">
-                    Alongside teaching ballet and coordinating events as Vice President of UBC Ballet,
-                    I designed and developed a website to update our branding and overall image.
+                    Alongside teaching advanced ballet classes and my role as VP External of UBC Ballet,
+                    I designed and developed a website to match our overall rebranding for the 24-25 school year.
                 </div>
                 <hr className="mt-3"/>
                 <div className="flex flex-row gap-1 items-center group cursor-pointer">
                     <a target="_blank" rel="noopener noreferrer" href="https://ubcballet.vercel.app/">
-                        <div className="flex flex-row text-neutral-700 mt-2 text-base py-2 group-hover:opacity-50 transition">
+                        <div className="text-indigo-700 flex flex-row text-neutral-700 mt-2 text-base py-2 group-hover:opacity-50 transition">
                             Visit the website
-                            <div className="text-neutral-700 group-hover:translate-x-1 transition">
-                                <IoIosArrowRoundForward size={24}/>
+                            <div className="group-hover:translate-x-1 transition">
+                                <IoIosArrowRoundForward size={24} className="text-indigo-700"/>
                             </div>
                         </div>
                     </a>
                 </div>
-                <hr className="mt-3 mb-10"/>
+                <hr className="mt-3"/>
             </div>
         </div>
     )

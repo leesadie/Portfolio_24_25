@@ -40,15 +40,15 @@ const ClassifModal = () => {
                 <hr className="mt-3"/>
                 <div className="flex flex-row gap-1 items-center group cursor-pointer">
                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/leesadie/Brain-Tumor-Detection">
-                        <div className="flex flex-row text-neutral-700 mt-2 text-base py-2 group-hover:opacity-50 transition">
+                        <div className="text-indigo-700 flex flex-row text-neutral-700 mt-2 text-base py-2 group-hover:opacity-50 transition">
                             Github repo
-                            <div className="text-neutral-700 group-hover:translate-x-1 transition">
-                                <IoIosArrowRoundForward size={24}/>
+                            <div className="group-hover:translate-x-1 transition">
+                                <IoIosArrowRoundForward size={24} className="text-indigo-700"/>
                             </div>
                         </div>
                     </a>
                 </div>
-                <hr className="mt-3 mb-10"/>
+                <hr className="mt-3"/>
             </div>
         </div>
     )

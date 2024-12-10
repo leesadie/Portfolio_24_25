@@ -9,9 +9,9 @@ const LabClient = () => {
     const router = useRouter();
 
     return (
-        <div className="flex flex-col lg:mx-80 mx-5 pt-24 tracking-tight">
+        <div className="flex flex-col lg:mx-80 mx-5 lg:pt-24 pt-10">
             <div className="lg:text-2xl text-neutral-700 text-base justify-center items-center">
-                In the lab — experimentation done for fun and for projects, things I've learned on my own, and other extras.
+                In the lab — experimentation done for fun and for projects, and things I've learned on my own.
             </div>
             <div className={`lg:mt-20 mt-10 text-base text-neutral-700 ${font_bold.className}`}>
                 CREATIVE CODING
@@ -110,10 +110,10 @@ const LabClient = () => {
                     for the Forestar project - NextJS 13, TypeScript, MongoDB, Prisma, NextAuth, Tailwind CSS 
                 </div>
             </div>
-            <div className="flex flex-row items-center justify-center pb-20 group gap-1 text-base text-neutral-500"
-                onClick={() => router.push('/')}>
-               <div className="group-hover:text-black group-hover:font-bold group-hover:opacity-100 group-hover:underline group-hover:underline-offset-8 transition cursor-pointer">
-                    Go back
+            <div className="flex flex-row items-center justify-center pb-20 group gap-1 text-base text-neutral-900"
+                onClick={() => router.push('/about')}>
+               <div className="hover:opacity-50 transition cursor-pointer">
+                    Back
                 </div>
             </div>
         </div>

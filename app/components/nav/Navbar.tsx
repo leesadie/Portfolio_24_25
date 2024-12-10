@@ -10,7 +10,7 @@ const Navbar = () => {
     const router = useRouter();
 
     return (
-        <div className="w-full fixed z-10 pt-5">
+        <div className="w-full md:fixed z-10 pt-5">
             <div className="">
                 <Container>
                     <div
@@ -35,7 +35,7 @@ const Navbar = () => {
                                 label="About"
                                 onClick={() => router.push('/about')} 
                             />
-                            <a target="_blank" rel="noopener noreferrer" href="files/Sadie_Lee_Resume2.pdf">
+                            <a target="_blank" rel="noopener noreferrer" href="files/Sadie_Lee_Resume.pdf">
                                 <div className="text-neutral-900 bg-neutral-200 hover:opacity-50 text-sm rounded-md py-2 px-4 ease-out duration-300 transition">
                                     Resume
                                 </div>

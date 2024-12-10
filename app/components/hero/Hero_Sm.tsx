@@ -15,12 +15,18 @@ import BCIModal from "../modals/BCIModal";
 import useBCIModal from "../hooks/useBCIModal";
 import BalletModal from "../modals/BalletModal";
 import useBalletModal from "../hooks/useBalletModal";
+import C303Modal from "../modals/C303Modal";
+import use303Modal from "../hooks/use303Modal";
+import C300Modal from "../modals/C300Modal";
+import use300Modal from "../hooks/use300Modal";
+import I200Modal from "../modals/I200Modal";
+import use200Modal from "../hooks/use200Modal";
+import W150Modal from "../modals/W150Modal";
+import use150Modal from "../hooks/use150Modal";
 
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { IoDocumentTextSharp } from "react-icons/io5";
-import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Hero_Sm = () => {
     const router = useRouter();
@@ -50,9 +56,28 @@ const Hero_Sm = () => {
         balletModal.onOpen();
     }, [balletModal])
 
+    const c303Modal = use303Modal();
+    const on303 = useCallback(() => {
+        c303Modal.onOpen();
+    }, [c303Modal])
+
+    const c300Modal = use300Modal();
+    const on300 = useCallback(() => {
+        c300Modal.onOpen();
+    }, [c300Modal])
+
+    const i200Modal = use200Modal();
+    const on200 = useCallback(() => {
+        i200Modal.onOpen();
+    }, [i200Modal])
+
+    const w150Modal = use150Modal();
+    const on150 = useCallback(() => {
+        w150Modal.onOpen();
+    }, [w150Modal])
 
     return (
-        <div className="flex flex-col mx-5 pt-20">
+        <div className="flex flex-col mx-5 pt-5">
             <div 
                 className="
                     flex 
@@ -77,6 +102,15 @@ const Hero_Sm = () => {
             >
                 Hi, I'm Sadie, I'm currently studying cognitive science and data science at UBC. 
                 My experience and interests are within ethical applications of data and technology for human health.
+            </div>
+            <div
+                className="
+                    text-neutral-700
+                    pt-5
+                "
+            >
+                I've previously worked at Mayo Clinic Platform and BC Children's Hospital Research Institute
+                in data analysis, ML, digital health, and AI ethics.
             </div>
             <div className="flex flex-row justify-start pt-5 gap-3">
                 <a target="_blank" rel="noopener noreferrer" href="mailto:leesadie025@gmail.com">
@@ -184,7 +218,7 @@ const Hero_Sm = () => {
             </div>
             <div className="flex flex-col pt-10">
                 <div className={`text-sm ${font_bold.className}`}>
-                    PREVIOUS PROJECTS
+                    PRIOR WORK
                 </div>
                 <hr className="bg-neutral-300 mt-5"/>
                 <div 
@@ -256,7 +290,7 @@ const Hero_Sm = () => {
                 </div>
                 <hr className="bg-neutral-300"/>
             </div>
-            <div className="flex flex-col pt-10">
+            <div className="flex flex-col pt-5">
                 <div className={`text-sm ${font_bold.className}`}>
                     RESEARCH
                 </div>
@@ -282,14 +316,92 @@ const Hero_Sm = () => {
                         </div>
                     </div>
                 </a>
-                <hr className="pt-2 pb-10"/>
+                <hr className="pt-2"/>
             </div>
+            <div className="flex flex-col pt-5">
+                    <div className={`row-span-1 text-sm text-neutral-700 ${font_bold.className}`}>
+                        COURSEWORK
+                    </div>
+                    <hr className="bg-neutral-300 mt-5"/>
+                    <div 
+                        className="text-sm pt-2 group hover:bg-neutral-200 ease-in duration-300 transition cursor-pointer"
+                        onClick={on303}
+                    >
+                        <div className="text-sm text-neutral-700 group-hover:translate-x-2 ease-in duration-300 transition">
+                            Adaptive BI Report
+                        </div>
+                        <div className="text-neutral-700 text-sm flex flex-row justify-between opacity-50">
+                            <div className="group-hover:translate-x-2 ease-in duration-300 transition">
+                                Design & Development
+                            </div>
+                            <div className="pb-2 group-hover:-translate-x-2 ease-in duration-300 transition">
+                                COGS 303
+                            </div>
+                        </div>
+                    </div>
+                    <hr className="bg-neutral-300"/>
+                    <div 
+                        className="text-sm pt-2 group hover:bg-neutral-200 ease-in duration-300 transition cursor-pointer"
+                        onClick={on300}
+                    >
+                        <div className="text-sm text-neutral-700 group-hover:translate-x-2 ease-in duration-300 transition">
+                            Theory and Design of Cognitive Systems
+                        </div>
+                        <div className="text-sm text-neutral-700 flex flex-row justify-between opacity-50">
+                            <div className="group-hover:translate-x-2 ease-in duration-300 transition">
+                                Writing & Development
+                            </div>
+                            <div className="pb-2 group-hover:-translate-x-2 ease-in duration-300 transition">
+                                COGS 300
+                            </div>
+                        </div>
+                    </div>
+                    <hr className="bg-neutral-300"/>
+                    <div 
+                        className="text-sm text-neutral-700 pt-2 group hover:bg-neutral-200 transition cursor-pointer"
+                        onClick={on200}
+                    >
+                        <div className="text-sm group-hover:translate-x-2 ease-in duration-300 transition">
+                            A Map of Apple Health
+                        </div>
+                        <div className="text-sm flex flex-row justify-between opacity-50">
+                            <div className="group-hover:translate-x-2 ease-in duration-300 transition">
+                                Research & Writing
+                            </div>
+                            <div className="pb-2 group-hover:-translate-x-2 ease-in duration-300 transition">
+                                INFO 200
+                            </div>
+                        </div>
+                    </div>
+                    <hr className="bg-neutral-200"/>
+                    <div 
+                        className="text-sm text-neutral-700 pt-2 group hover:bg-neutral-200 ease-in duration-300 transition cursor-pointer"
+                        onClick={on150}
+                    >
+                        <div className="text-sm group-hover:translate-x-2 ease-in duration-300 transition">
+                            Nostalgia in Diaspora Economics
+                        </div>
+                        <div className="text-sm flex flex-row justify-between opacity-50">
+                            <div className="group-hover:translate-x-2 ease-in duration-300 transition">
+                                Research & Writing
+                            </div>
+                            <div className="pb-2 group-hover:-translate-x-2 ease-in duration-300 transition">
+                                WRDS 150
+                            </div>
+                        </div>
+                    </div>
+                    <hr className="pb-10"/>
+                </div>
             <div>
                 <DashboardModal />
                 <ImagingModal />
                 <ClassifModal />
                 <BCIModal />
                 <BalletModal />
+                <C303Modal />
+                <C300Modal />
+                <I200Modal />
+                <W150Modal />
             </div>
         </div>
     );

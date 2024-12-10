@@ -8,12 +8,12 @@ const ForestarClient = () => {
     const router = useRouter();
 
     return (
-        <div className="flex flex-col lg:mx-80 mx-5 pt-24">
+        <div className="flex flex-col lg:mx-80 mx-5 lg:pt-24 pt-10">
             <div className="flex flex-row justify-between">
                 <div className={`lg:text-xl text-base text-neutral-900 ${font_med.className}`}>
                     Forestar Web App
                 </div>
-                <div className="text-base text-neutral-700 opacity-50">
+                <div className="lg:text-base text-sm text-neutral-700 opacity-50">
                     SUMMER 2023
                 </div>
             </div>
@@ -51,7 +51,49 @@ const ForestarClient = () => {
                         sense at a given location along the route.
                     </div>
                 </div>
-                <div className="flex flex-col col-span-1 text-neutral-700 text-base">
+                <div className="flex flex-row gap-10 lg:hidden block">
+                    <div className="flex flex-col col-span-1 text-neutral-700 text-base">
+                        <div className={`${font_bold.className}`}>
+                            SKILLS
+                        </div>
+                        <div className="pt-5">
+                            Mobile-first design
+                        </div>
+                        <div>
+                            Frontend dev
+                        </div>
+                        <div>
+                            Backend dev
+                        </div>
+                    </div>
+                    <div className="flex flex-col col-span-1 text-neutral-700 text-base">
+                        <div className={`${font_bold.className}`}>
+                            TOOLS
+                        </div>
+                        <div className="pt-5">
+                            React
+                        </div>
+                        <div>
+                            Node.js
+                        </div>
+                        <div>
+                            TypeScript
+                        </div>
+                        <div>
+                            MongoDB
+                        </div>
+                        <div>
+                            Tailwind CSS
+                        </div>
+                        <div>
+                            Needle Engine
+                        </div>
+                        <div>
+                            Unity
+                        </div>
+                    </div>
+                </div>
+                <div className="hidden lg:block flex flex-col col-span-1 text-neutral-700 text-base">
                     <div className={`${font_bold.className}`}>
                         SKILLS
                     </div>
@@ -65,7 +107,7 @@ const ForestarClient = () => {
                         Backend dev
                     </div>
                 </div>
-                <div className="flex flex-col col-span-1 text-neutral-700 text-base">
+                <div className="hidden lg:block flex flex-col col-span-1 text-neutral-700 text-base">
                     <div className={`${font_bold.className}`}>
                         TOOLS
                     </div>
@@ -101,8 +143,6 @@ const ForestarClient = () => {
                     py-20
                     text-base
                     text-neutral-900
-                    hover:underline
-                    hover:underline-offset-4
                     hover:opacity-50
                     transition
                     cursor-pointer

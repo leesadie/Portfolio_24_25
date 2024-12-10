@@ -8,7 +8,7 @@ const ReachoutClient = () => {
     const router = useRouter();
 
     return (
-        <div className="flex flex-col lg:mx-80 mx-5 pt-24">
+        <div className="flex flex-col lg:mx-80 mx-5 lg:pt-24 pt-10">
             <div className="flex flex-row justify-between">
                 <div className={`lg:text-xl text-sm text-neutral-900 ${font_med.className}`}>
                     T1D REACHOUT Time in Range
@@ -46,7 +46,37 @@ const ReachoutClient = () => {
                         In addition to calculating time in range, we calculated time spent in the high range, very high range, low range, and very low range, as well as Glucose Management Indicator and coefficient of variation.
                     </div>
                 </div>
-                <div className="flex flex-col col-span-1 text-neutral-700 text-base">
+                <div className="flex flex-row gap-10 lg:hidden block">
+                    <div className="flex flex-col col-span-1 text-neutral-700 text-base">
+                        <div className={`${font_bold.className}`}>
+                            SKILLS
+                        </div>
+                        <div className="pt-5">
+                            Data collection
+                        </div>
+                        <div>
+                            Data analysis
+                        </div>
+                        <div>
+                            Data visualization
+                        </div>
+                    </div>
+                    <div className="flex flex-col col-span-1 text-neutral-700 text-base">
+                        <div className={`${font_bold.className}`}>
+                            TOOLS
+                        </div>
+                        <div className="pt-5">
+                            R
+                        </div>
+                        <div>
+                            tidyverse
+                        </div>
+                        <div>
+                            Jupyter
+                        </div>
+                    </div>
+                </div>
+                <div className="hidden lg:block flex flex-col col-span-1 text-neutral-700 text-base">
                     <div className={`${font_bold.className}`}>
                         SKILLS
                     </div>
@@ -60,7 +90,7 @@ const ReachoutClient = () => {
                         Data visualization
                     </div>
                 </div>
-                <div className="flex flex-col col-span-1 text-neutral-700 text-base">
+                <div className="hidden lg:block flex flex-col col-span-1 text-neutral-700 text-base">
                     <div className={`${font_bold.className}`}>
                         TOOLS
                     </div>
@@ -84,8 +114,6 @@ const ReachoutClient = () => {
                     py-20
                     text-base
                     text-neutral-900
-                    hover:underline
-                    hover:underline-offset-4
                     hover:opacity-50
                     transition
                     cursor-pointer

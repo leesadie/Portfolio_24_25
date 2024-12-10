@@ -33,22 +33,21 @@ const DashboardModal = () => {
                 <hr className="mt-3"/>
                 <div className="text-neutral-700 mt-3 lg:text-base tracking-tight text-sm">
                     During my internship at Mayo Clinic Platform, I worked with the 
-                    Market Intel and Business Intel teams to develop dashboards with 
-                    Power BI and DAX to perform calculations, integrate interactivity, 
-                    and visualize data.
+                    Market Intel and Business Intel teams to develop dashboards to geographically 
+                    visualize potential client prospects using Power BI and DAX.
                 </div>
                 <hr className="mt-3"/>
                 <div className="flex flex-row gap-1 items-center group cursor-pointer">
                     <a target="_blank" rel="noopener noreferrer" href="mailto:leesadie025@gmail.com">
-                        <div className="flex flex-row text-neutral-700 mt-2 text-base py-2 group-hover:opacity-50 transition">
+                        <div className="text-indigo-700 flex flex-row text-neutral-700 mt-2 text-base py-2 group-hover:opacity-50 transition">
                             Email me
-                            <div className="text-neutral-700 group-hover:translate-x-1 transition">
-                                <IoIosArrowRoundForward size={24}/>
+                            <div className="group-hover:translate-x-1 transition">
+                                <IoIosArrowRoundForward size={24} className="text-indigo-700"/>
                             </div>
                         </div>
                     </a>
                 </div>
-                <hr className="mt-3 mb-10"/>
+                <hr className="mt-3"/>
             </div>
         </div>
     )

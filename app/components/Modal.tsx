@@ -116,7 +116,7 @@ const Modal: React.FC<ModalProps> = ({
                                         text-neutral-700
                                     "
                                 >
-                                    Back
+                                    Close
                                 </button>
                             </div>
                         </div>

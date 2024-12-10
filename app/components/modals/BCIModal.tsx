@@ -41,22 +41,22 @@ const BCIModal = () => {
                 </div>
                 <hr className="mt-3"/>
                 <div className="text-neutral-700 mt-3 lg:text-base text-sm">
-                    Another one of my roles during my time at UBC Multifaceted Innovations in Neurotechnology (MINT) was to 
-                    understand interactions between humans and brain computer interfaces (BCI). Specifically, a multi-purpose,
-                    reinforcement learning-based BCI was being built.
+                    Another one of my roles at UBC Multifaceted Innovations in Neurotechnology (MINT) was to 
+                    understand interactions between humans and brain computer interfaces (BCI), specifically, 
+                    a reinforcement learning-based BCI.
                 </div>
                 <hr className="mt-3"/>
                 <div className="flex flex-row gap-1 items-center group cursor-pointer">
                     <a target="_blank" rel="noopener noreferrer" href="files/HCI_BCI_Lit_Review.pdf">
-                        <div className="flex flex-row text-neutral-700 mt-2 text-base py-2 group-hover:opacity-50 transition">
+                        <div className="text-indigo-700 flex flex-row text-neutral-700 mt-2 text-base py-2 group-hover:opacity-50 transition">
                             Read the lit review
-                            <div className="text-neutral-700 group-hover:translate-x-1 transition">
-                                <IoIosArrowRoundForward size={24}/>
+                            <div className="group-hover:translate-x-1 transition">
+                                <IoIosArrowRoundForward size={24} className="text-indigo-700"/>
                             </div>
                         </div>
                     </a>
                 </div>
-                <hr className="mt-3 mb-10"/>
+                <hr className="mt-3"/>
             </div>
         </div>
     )

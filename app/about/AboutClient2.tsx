@@ -108,7 +108,7 @@ const AboutClient2 = () => {
                     "
                 >
                     <Image 
-                        src='/images/about/tofino.svg'
+                        src='/images/about/tofino2.svg'
                         alt="code"
                         width={100}
                         height={100}
